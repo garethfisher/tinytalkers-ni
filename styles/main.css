@@ -424,6 +424,18 @@ strong { font-weight: 700; }
   font-size: var(--step--1);
 }
 
+/* ---------- Icon badge (standalone, larger than .card__icon) ---------- */
+.icon-badge {
+  display: inline-grid;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: var(--r-pill);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.icon-badge svg { width: 2rem; height: 2rem; }
+
 /* ---------- Steps ---------- */
 .steps { list-style: none; display: grid; gap: var(--space-5); counter-reset: step; }
 .step { display: grid; grid-template-columns: auto 1fr; gap: var(--space-4); align-items: start; }
@@ -654,6 +666,10 @@ strong { font-weight: 700; }
   .site-nav .btn { margin-top: 0; width: auto; margin-left: var(--space-3); }
   .card-grid--3 { grid-template-columns: repeat(3, 1fr); }
   .services-list .card-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 48rem) {
+  .steps--3 { grid-template-columns: repeat(3, 1fr); }
 }
 
 /* ---------- Motion preferences ---------- */
