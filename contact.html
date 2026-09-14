@@ -111,7 +111,12 @@
       <div class="wrap">
         <h2>Send a message</h2>
         <div class="form-layout">
-        <form class="form" method="post" action="#" novalidate>
+        <form class="form" method="POST" action="https://formsubmit.co/garethfisher@hotmail.com" novalidate>
+          <input type="hidden" name="_subject" value="New enquiry — Tiny Talkers NI website" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://garethfisher.github.io/tinytalkers-ni/thank-you.html" />
+          <input type="text" name="_honey" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <div class="field">
             <label for="name">Your name</label>
             <input type="text" id="name" name="name" autocomplete="name" required />
@@ -134,7 +139,7 @@
             <textarea id="message" name="message" required></textarea>
           </div>
           <button type="submit" class="btn btn--primary">Send enquiry</button>
-          <p class="hint">This form is a demo and is not yet connected. Please phone or email for now.</p>
+          <p class="hint">Sent straight to my inbox &mdash; I&rsquo;ll reply within two working days.</p>
         </form>
 
         <aside class="next-steps">
