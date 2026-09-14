@@ -535,44 +535,24 @@ strong { font-weight: 700; }
 .faq__panel-inner { overflow: hidden; min-height: 0; }
 .faq__panel-inner p { margin: var(--space-3) 0 0; color: var(--text-muted); }
 
-/* ---------- Forms ---------- */
-.form { display: grid; gap: var(--space-5); max-width: 34rem; }
-.field label { display: block; font-weight: 800; margin-bottom: var(--space-2); }
-.field input,
-.field textarea {
-  width: 100%;
-  font: inherit;
-  color: var(--text);
-  background: var(--surface);
-  border: 2px solid var(--border);
-  border-radius: var(--r-md);
-  padding: 0.7rem 0.9rem;
-  transition: border-color var(--dur-micro) var(--ease-out), box-shadow var(--dur-micro) var(--ease-out);
-}
-.field input:focus,
-.field textarea:focus {
-  outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 0 4px var(--ring);
-}
-.field textarea { min-height: 8rem; resize: vertical; }
-.field .hint { margin: var(--space-2) 0 0; font-size: var(--step--1); color: var(--text-muted); }
-
-/* ---------- Contact details ---------- */
-.contact-grid { display: grid; gap: var(--space-6); }
-
-.form-layout { display: grid; gap: var(--space-6); }
-.next-steps {
+/* ---------- Email CTA ---------- */
+.email-cta {
+  max-width: 30rem;
+  margin-inline: auto;
+  text-align: center;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--r-lg);
-  padding: var(--space-5);
   box-shadow: var(--shadow-1);
-  align-self: start;
+  padding: var(--space-7) var(--space-6);
 }
-.next-steps h3 { font-size: var(--step-1); margin-bottom: var(--space-3); }
-.next-steps ol { padding-left: 1.1rem; display: grid; gap: var(--space-2); color: var(--text-muted); }
-.next-steps p { margin: var(--space-4) 0 0; color: var(--text-muted); font-size: var(--step--1); }
+.email-cta .icon-badge { margin-inline: auto; }
+.email-cta h2 { margin-top: var(--space-4); }
+.email-cta .lede { margin-inline: auto; }
+.email-cta .btn { margin-top: var(--space-5); }
+
+/* ---------- Contact details ---------- */
+.contact-grid { display: grid; gap: var(--space-6); }
 .contact-list { list-style: none; display: grid; gap: var(--space-4); }
 .contact-list .label {
   display: block;
@@ -704,9 +684,6 @@ strong { font-weight: 700; }
   .services-list .card-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (min-width: 48rem) {
-  .steps--3 { grid-template-columns: repeat(3, 1fr); }
-}
 
 /* ---------- Motion preferences ---------- */
 @media (prefers-reduced-motion: reduce) {
