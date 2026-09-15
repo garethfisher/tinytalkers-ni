@@ -70,7 +70,7 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="wrap">
+      <section className="wrap" style={{ marginBottom: "var(--space-9)" }}>
         <div className="cta-band">
           <h2>Not sure which service you need?</h2>
           <p>That&rsquo;s exactly what the free consultation is for. We&rsquo;ll work it out together.</p>
