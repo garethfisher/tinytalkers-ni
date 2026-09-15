@@ -63,6 +63,7 @@
 
   /* Motion */
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
   --dur-micro: 180ms;
   --dur-move: 320ms;
 
@@ -402,7 +403,18 @@ strong { font-weight: 700; }
   font-weight: 500;
   line-height: 1.3;
   box-shadow: var(--shadow-1);
+  /* Hidden until .chat picks up .is-visible (useInView, an
+     IntersectionObserver hook, adds it on scroll) — each bubble
+     rises/fades in with a stagger, one message at a time. */
+  opacity: 0;
+  transform: translateY(14px) scale(0.96);
+  transition: opacity 420ms var(--ease-spring), transform 420ms var(--ease-spring);
 }
+.chat.is-visible .bubble { opacity: 1; transform: translateY(0) scale(1); }
+.chat.is-visible .bubble:nth-child(1) { transition-delay: 0ms; }
+.chat.is-visible .bubble:nth-child(2) { transition-delay: 220ms; }
+.chat.is-visible .bubble:nth-child(3) { transition-delay: 440ms; }
+.chat.is-visible .bubble:nth-child(4) { transition-delay: 660ms; }
 .bubble--them {
   align-self: flex-start;
   background: var(--surface);

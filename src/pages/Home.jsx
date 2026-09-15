@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import { asset } from "../lib/asset.js";
 import { usePageMeta } from "../hooks/usePageMeta.js";
+import { useInView } from "../hooks/useInView.js";
 
 export default function Home() {
   usePageMeta(
     "Tiny Talkers NI — Children's speech & language therapy",
     "Independent speech and language therapy for pre-school and school-aged children across Northern Ireland. Free initial consultation with Shirley-Ann Dickey, paediatric speech and language therapist."
   );
+
+  const [chatRef, chatInView] = useInView({ threshold: 0.4 });
 
   return (
     <>
@@ -30,7 +33,7 @@ export default function Home() {
             </div>
             <p className="hero__contact">Prefer to talk now? Call <a href="tel:+447779619417">07779 619417</a></p>
           </div>
-          <div className="chat" aria-hidden="true">
+          <div className={"chat" + (chatInView ? " is-visible" : "")} aria-hidden="true" ref={chatRef}>
             <span className="bubble bubble--them">Is my little one a late talker?</span>
             <span className="bubble bubble--me">Let&rsquo;s have a chat and find out together.</span>
             <span className="bubble bubble--them">Where do we start?</span>
