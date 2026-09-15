@@ -646,6 +646,11 @@ strong { font-weight: 700; }
   border: 0;
 }
 /* ---------- CTA band ---------- */
+/* Wraps every closing-CTA .cta-band across the site — gives it room on
+   both sides so it never sits flush against a section directly above
+   or below it (the tinted sections especially, where two different
+   blues touching looks like a bug rather than a boundary). */
+.cta-section { margin-block: var(--space-9); }
 .cta-band {
   background: var(--accent);
   color: var(--accent-contrast);

@@ -74,7 +74,7 @@ export default function Faq() {
         </div>
       </section>
 
-      <section className="wrap" style={{ marginBottom: "var(--space-9)" }}>
+      <section className="wrap cta-section">
         <div className="cta-band">
           <h2>Still have a question?</h2>
           <p>Send it over and I&rsquo;ll get back to you.</p>

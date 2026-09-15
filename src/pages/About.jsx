@@ -68,7 +68,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="wrap">
+      <section className="wrap cta-section">
         <div className="cta-band">
           <h2>Think I might be able to help?</h2>
           <p>Start with a free, no-obligation chat. No referral needed.</p>
