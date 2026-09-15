@@ -351,10 +351,7 @@ strong { font-weight: 700; }
 }
 .hero__contact a { font-weight: 800; }
 
-/* Full-bleed photo band with a JS-driven parallax drift (scripts/main.js).
-   The media layer bleeds past the section edges so the transform never
-   reveals a gap; everything degrades gracefully to a static photo
-   without JS or with prefers-reduced-motion. */
+/* Full-bleed photo band. */
 .hero-banner {
   position: relative;
   width: 100%;
@@ -363,7 +360,7 @@ strong { font-weight: 700; }
 }
 .hero-banner__media {
   position: absolute;
-  inset: -3rem 0;
+  inset: 0;
   overflow: hidden;
 }
 .hero-banner__img {
@@ -371,7 +368,6 @@ strong { font-weight: 700; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: translateY(0);
 }
 .hero-banner::after {
   content: "";
@@ -622,26 +618,28 @@ strong { font-weight: 700; }
   color: var(--text-muted);
 }
 
+/* Full-bleed, edge-to-edge — the map breaks out of .wrap; only the
+   caption link stays aligned to the content column (it carries its
+   own .wrap class for that). */
 .map {
-  margin-top: var(--space-6);
-  border-radius: var(--r-lg);
+  width: 100%;
+  margin-top: var(--space-7);
   overflow: hidden;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-1);
   background: var(--surface-alt);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 .map iframe {
   display: block;
   width: 100%;
-  height: 22rem;
+  height: clamp(18rem, 32vw, 28rem);
   border: 0;
 }
 .map__link {
   display: block;
-  padding: var(--space-3) var(--space-4);
+  padding-block: var(--space-3);
   font-weight: 800;
   text-decoration: none;
-  border-top: 1px solid var(--border);
   background: var(--surface);
 }
 .map__link:hover { background: var(--surface-alt); }

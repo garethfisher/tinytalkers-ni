@@ -72,36 +72,4 @@
   /* ---- Footer year ---- */
   var yearEl = document.querySelector("[data-year]");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
-
-  /* ---- Hero banner parallax ---- */
-  var banner = document.querySelector(".hero-banner");
-  var bannerImg = banner && banner.querySelector(".hero-banner__img");
-  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  if (bannerImg && !reduceMotion) {
-    var PARALLAX_FACTOR = 0.15;
-    var PARALLAX_MAX = 40; // px — kept within the media layer's 3rem bleed
-    var ticking = false;
-
-    function updateParallax() {
-      var rect = banner.getBoundingClientRect();
-      // Skip work once the banner is well outside the viewport.
-      if (rect.bottom > -200 && rect.top < window.innerHeight + 200) {
-        var offset = rect.top * PARALLAX_FACTOR;
-        if (offset > PARALLAX_MAX) offset = PARALLAX_MAX;
-        if (offset < -PARALLAX_MAX) offset = -PARALLAX_MAX;
-        bannerImg.style.transform = "translateY(" + offset + "px)";
-      }
-      ticking = false;
-    }
-
-    window.addEventListener("scroll", function () {
-      if (!ticking) {
-        window.requestAnimationFrame(updateParallax);
-        ticking = true;
-      }
-    }, { passive: true });
-
-    updateParallax();
-  }
 })();
