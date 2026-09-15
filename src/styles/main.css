@@ -411,10 +411,10 @@ strong { font-weight: 700; }
   transition: opacity 420ms var(--ease-spring), transform 420ms var(--ease-spring);
 }
 .chat.is-visible .bubble { opacity: 1; transform: translateY(0) scale(1); }
-.chat.is-visible .bubble:nth-child(1) { transition-delay: 0ms; }
-.chat.is-visible .bubble:nth-child(2) { transition-delay: 220ms; }
-.chat.is-visible .bubble:nth-child(3) { transition-delay: 440ms; }
-.chat.is-visible .bubble:nth-child(4) { transition-delay: 660ms; }
+.chat.is-visible .bubble:nth-child(1) { transition-delay: 0s; }
+.chat.is-visible .bubble:nth-child(2) { transition-delay: 3s; }
+.chat.is-visible .bubble:nth-child(3) { transition-delay: 6s; }
+.chat.is-visible .bubble:nth-child(4) { transition-delay: 9s; }
 .bubble--them {
   align-self: flex-start;
   background: var(--surface);
