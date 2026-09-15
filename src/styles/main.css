@@ -659,22 +659,6 @@ strong { font-weight: 700; }
   pointer-events: none;
   z-index: 1;
 }
-/* This embed always centers the map on the queried address (with
-   Google's own pin dead-centre) — so a custom pin pinned to the exact
-   centre lines up reliably and covers Google's (now blue-tinted) one,
-   letting the marker itself stay brand orange regardless of the tint. */
-.map__pin {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -100%);
-  width: 2.25rem;
-  height: 2.25rem;
-  color: var(--brand-orange);
-  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.35));
-  pointer-events: none;
-  z-index: 2;
-}
 /* ---------- CTA band ---------- */
 /* Wraps every closing-CTA .cta-band across the site — gives it room on
    both sides so it never sits flush against a section directly above
