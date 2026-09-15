@@ -371,6 +371,18 @@ strong { font-weight: 700; }
   height: 100%;
   object-fit: cover;
 }
+/* Dark scrim so the overlay label stays legible over any part of the
+   photo, not just the naturally-dark corner it happens to sit over now
+   — plain alpha (no blend-mode) so it darkens predictably in both
+   themes, unlike ::after's multiply/soft-light tint below. */
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.18) 45%, transparent 75%);
+  pointer-events: none;
+}
 .hero-banner::after {
   content: "";
   position: absolute;
