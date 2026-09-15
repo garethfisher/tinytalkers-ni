@@ -67,6 +67,15 @@ export default function Contact() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
+          {/* Duotone brand-colour overlay — see the comment on .map iframe
+              in main.css for why (no styling API on the free embed). */}
+          <div className="map__tint" aria-hidden="true"></div>
+          {/* Covers Google's own (now blue-tinted) pin with a brand-orange
+              one — reliable because this embed always centres the map
+              exactly on the queried address. */}
+          <svg className="map__pin" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C7.58 2 4 5.58 4 10c0 5.25 7 12 8 12s8-6.75 8-12c0-4.42-3.58-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+          </svg>
         </figure>
       </section>
 

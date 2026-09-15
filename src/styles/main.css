@@ -632,6 +632,7 @@ strong { font-weight: 700; }
 
 /* Full-bleed, edge-to-edge — the map breaks out of .wrap. */
 .map {
+  position: relative;
   width: 100%;
   margin: var(--space-7) 0 0;
   overflow: hidden;
@@ -644,6 +645,35 @@ strong { font-weight: 700; }
   width: 100%;
   height: clamp(18rem, 32vw, 28rem);
   border: 0;
+  /* Google's free /maps?output=embed iframe has no styling API (that
+     needs the paid Maps JS SDK + a Cloud API key) — desaturate it so
+     the brand-colour overlay below reads as a deliberate duotone
+     rather than fighting Google's own red/green/yellow map colours. */
+  filter: grayscale(1) contrast(1.05);
+}
+.map__tint {
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  mix-blend-mode: color;
+  pointer-events: none;
+  z-index: 1;
+}
+/* This embed always centers the map on the queried address (with
+   Google's own pin dead-centre) — so a custom pin pinned to the exact
+   centre lines up reliably and covers Google's (now blue-tinted) one,
+   letting the marker itself stay brand orange regardless of the tint. */
+.map__pin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 2.25rem;
+  height: 2.25rem;
+  color: var(--brand-orange);
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.35));
+  pointer-events: none;
+  z-index: 2;
 }
 /* ---------- CTA band ---------- */
 /* Wraps every closing-CTA .cta-band across the site — gives it room on
