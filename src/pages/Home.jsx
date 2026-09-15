@@ -3,6 +3,18 @@ import { asset } from "../lib/asset.js";
 import { usePageMeta } from "../hooks/usePageMeta.js";
 import { useInView } from "../hooks/useInView.js";
 
+const CONDITIONS = [
+  "Late talking",
+  "Language delay & disorder",
+  "Speech sound difficulties",
+  "Verbal dyspraxia",
+  "Developmental language disorder",
+  "Global developmental delay",
+  "Attention & listening",
+  "Autism-related communication",
+  "Stammering",
+];
+
 export default function Home() {
   usePageMeta(
     "Tiny Talkers NI — Children's speech & language therapy",
@@ -10,6 +22,7 @@ export default function Home() {
   );
 
   const [chatRef, chatInView] = useInView({ threshold: 0.4 });
+  const [pillsRef, pillsInView] = useInView({ threshold: 0.3 });
 
   return (
     <>
@@ -50,16 +63,10 @@ export default function Home() {
             <h2>Support for a wide range of communication needs</h2>
             <p>If something about your child&rsquo;s talking or understanding is worrying you, it&rsquo;s worth a conversation. I regularly work with children who have:</p>
           </div>
-          <ul className="pill-list">
-            <li>Late talking</li>
-            <li>Language delay &amp; disorder</li>
-            <li>Speech sound difficulties</li>
-            <li>Verbal dyspraxia</li>
-            <li>Developmental language disorder</li>
-            <li>Global developmental delay</li>
-            <li>Attention &amp; listening</li>
-            <li>Autism-related communication</li>
-            <li>Stammering</li>
+          <ul className={"pill-list" + (pillsInView ? " is-visible" : "")} ref={pillsRef}>
+            {CONDITIONS.map((label, i) => (
+              <li key={label} style={{ transitionDelay: i * 70 + "ms" }}>{label}</li>
+            ))}
           </ul>
         </div>
       </section>

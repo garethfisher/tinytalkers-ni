@@ -467,7 +467,14 @@ strong { font-weight: 700; }
   border: 1px solid var(--border);
   font-weight: 700;
   font-size: var(--step--1);
+  /* Hidden until .pill-list picks up .is-visible (useInView) — each
+     pill rises/fades in with a short stagger (delay set inline per
+     item), one after another. */
+  opacity: 0;
+  transform: translateY(10px) scale(0.94);
+  transition: opacity 380ms var(--ease-spring), transform 380ms var(--ease-spring);
 }
+.pill-list.is-visible li { opacity: 1; transform: translateY(0) scale(1); }
 
 /* ---------- Icon badge (standalone, larger than .card__icon) ---------- */
 .icon-badge {
