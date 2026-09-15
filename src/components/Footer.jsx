@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Tiny Talkers. Registered with the RCSLT and HCPC. Website is a demo build.</p>
+          <p>&copy; {new Date().getFullYear()} Tiny Talkers. Registered with the RCSLT and HCPC.</p>
         </div>
       </div>
     </footer>
