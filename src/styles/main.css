@@ -363,6 +363,7 @@ strong { font-weight: 700; }
   position: absolute;
   inset: 0;
   overflow: hidden;
+  z-index: 0;
 }
 .hero-banner__img {
   display: block;
@@ -374,6 +375,7 @@ strong { font-weight: 700; }
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 1;
   background:
     linear-gradient(to bottom, var(--bg), transparent 12%, transparent 88%, var(--bg)),
     linear-gradient(180deg, color-mix(in srgb, var(--brand-blue-ink) 16%, transparent), color-mix(in srgb, var(--brand-orange) 10%, transparent));
@@ -384,6 +386,40 @@ strong { font-weight: 700; }
   :root:not([data-theme="light"]) .hero-banner::after { mix-blend-mode: soft-light; }
 }
 :root[data-theme="dark"] .hero-banner::after { mix-blend-mode: soft-light; }
+
+@keyframes heroLabelIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* The absolute positioning lives on the full-width row, not the label
+   itself — the label is a normal in-flow .wrap, so its left edge lines
+   up with the header/logo through the exact same max-width + auto-
+   margin + padding mechanism, rather than trying to recreate that
+   centering under position:absolute (auto margins don't reliably
+   center there once left/right are also set). */
+.hero-banner__label-row {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: var(--space-6);
+  z-index: 2;
+  pointer-events: none;
+}
+.hero-banner__label {
+  margin-block: 0;
+  color: #fff;
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: var(--step--1);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75), 0 2px 18px rgba(0, 0, 0, 0.5);
+  animation: heroLabelIn 650ms var(--ease-spring) 150ms both;
+}
+@media (min-width: 48rem) {
+  .hero-banner__label-row { bottom: var(--space-7); }
+  .hero-banner__label { font-size: var(--step-0); }
+}
 
 /* Chat bubble illustration */
 .chat {

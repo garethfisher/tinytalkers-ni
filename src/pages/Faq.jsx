@@ -52,7 +52,7 @@ export default function Faq() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section--tint">
         <div className="wrap">
           <div className="faq">
             {/* Native <details>/<summary> — the open/close animation is pure

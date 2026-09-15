@@ -31,13 +31,15 @@ export default function Home() {
         <div className="hero-banner__media">
           <img className="hero-banner__img" src={asset("brand_assets/banner.jpg")} alt="A toddler exploring a colourful picture book at home" loading="eager" />
         </div>
+        <div className="hero-banner__label-row">
+          <p className="hero-banner__label wrap">Independent speech &amp; language therapy</p>
+        </div>
       </section>
 
       {/* Hero */}
       <section className="hero wrap">
         <div className="hero__grid">
           <div>
-            <p className="eyebrow">Independent speech &amp; language therapy</p>
             <h1>Helping every child find their voice</h1>
             <p className="lede">Friendly, one-to-one speech and language therapy for pre-school and school-aged children across Northern Ireland — with a free initial chat to talk things through, no referral needed.</p>
             <div className="btn-row">
