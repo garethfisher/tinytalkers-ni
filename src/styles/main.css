@@ -618,12 +618,10 @@ strong { font-weight: 700; }
   color: var(--text-muted);
 }
 
-/* Full-bleed, edge-to-edge — the map breaks out of .wrap; only the
-   caption link stays aligned to the content column (it carries its
-   own .wrap class for that). */
+/* Full-bleed, edge-to-edge — the map breaks out of .wrap. */
 .map {
   width: 100%;
-  margin-top: var(--space-7);
+  margin: var(--space-7) 0 0;
   overflow: hidden;
   background: var(--surface-alt);
   border-top: 1px solid var(--border);
@@ -635,15 +633,6 @@ strong { font-weight: 700; }
   height: clamp(18rem, 32vw, 28rem);
   border: 0;
 }
-.map__link {
-  display: block;
-  padding-block: var(--space-3);
-  font-weight: 800;
-  text-decoration: none;
-  background: var(--surface);
-}
-.map__link:hover { background: var(--surface-alt); }
-
 /* ---------- CTA band ---------- */
 .cta-band {
   background: var(--accent);
@@ -665,7 +654,6 @@ strong { font-weight: 700; }
   background: var(--surface-alt);
   border-top: 1px solid var(--border);
   padding-block: var(--space-7) var(--space-6);
-  margin-top: var(--space-9);
 }
 .footer-grid { display: grid; gap: var(--space-6); }
 .site-footer h2 { font-size: var(--step-1); margin-bottom: var(--space-3); }

@@ -154,7 +154,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="wrap">
+      <section className="wrap" style={{ marginBottom: "var(--space-9)" }}>
         <div className="cta-band">
           <h2>Worried about your child&rsquo;s communication?</h2>
           <p>The first conversation is free and there&rsquo;s no referral needed. Let&rsquo;s talk it through.</p>

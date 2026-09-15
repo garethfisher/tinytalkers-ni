@@ -17,7 +17,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="section section--tint">
+      <section className="section section--tint" style={{ paddingBottom: 0 }}>
         <div className="wrap">
           <div className="contact-grid">
             <div>
@@ -67,9 +67,6 @@ export default function Contact() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
-          <a className="map__link wrap" href="https://www.google.com/maps/search/?api=1&query=16+Valley+Road+Killadeas+Irvinestown+BT94+1SF" target="_blank" rel="noopener">
-            Open in Google Maps &rarr;
-          </a>
         </figure>
       </section>
 
