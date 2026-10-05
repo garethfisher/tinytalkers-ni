@@ -20,15 +20,15 @@ const FAQS = [
   },
   {
     q: "Where do sessions take place?",
-    a: "At the clinic in Killadeas, County Fermanagh, or at your home, nursery or school. Travel outside the local area is possible and charged separately based on distance.",
+    a: "At my clinic in Killadeas, County Fermanagh, or at your nursery or school. Travel outside the local area is possible and charged separately based on distance.",
   },
   {
     q: "How much does it cost?",
-    a: "Fees vary by service and include administration and materials. Contact me for a current price list. The initial consultation is free.",
+    a: "Fees are available on request and depend on the service. Assessment and session fees include administration time and materials. Travel to your home, nursery or school is calculated separately based on distance. The initial consultation is free. Get in touch for a full price list.",
   },
   {
     q: "Can I claim on private health insurance?",
-    a: "Some policies cover speech and language therapy, often needing a GP or paediatrician referral first. Check with your insurer, and I can provide invoices and reports to support a claim.",
+    a: "Some policies cover speech and language therapy. Check with your insurer, and I can provide invoices and reports to support a claim.",
   },
   {
     q: "Will you work with my child’s school or nursery?",

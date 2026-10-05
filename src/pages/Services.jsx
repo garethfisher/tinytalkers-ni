@@ -8,7 +8,7 @@ const SERVICES = [
   },
   {
     title: "2. Initial assessment",
-    body: "A play-based assessment lasting around an hour, looking at your child’s understanding, spoken language, speech sounds and interaction. You’ll get verbal feedback and clear recommendations on the day.",
+    body: "A play-based or formal assessment lasting around an hour, looking at your child’s understanding, spoken language, speech sounds and interaction. You’ll get verbal feedback and clear recommendations on the day.",
   },
   {
     title: "3. Written diagnostic report",
@@ -33,6 +33,10 @@ const SERVICES = [
   {
     title: "8. Training & home / school programmes",
     body: "Training for families, nurseries, schools and agencies, plus written home and school programmes so everyone supporting your child is using the same strategies.",
+  },
+  {
+    title: "9. School & Nursery input",
+    body: "Advice and strategies for the classroom, individual therapy sessions or class-based support for children within your school.",
   },
 ];
 
@@ -61,11 +65,6 @@ export default function Services() {
                 <p>{s.body}</p>
               </article>
             ))}
-          </div>
-
-          <div className="card" style={{ marginTop: "2rem", maxWidth: "52rem" }}>
-            <h3>Fees</h3>
-            <p>Fees are available on request and depend on the service. Assessment and session fees include administration time and materials. Travel to your home, nursery or school is calculated separately based on distance. Get in touch for a full price list.</p>
           </div>
         </div>
       </section>

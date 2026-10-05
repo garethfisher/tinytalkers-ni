@@ -13,7 +13,7 @@ export default function Contact() {
         <div>
           <p className="eyebrow">Get in touch</p>
           <h1>Let&rsquo;s talk about your child</h1>
-          <p className="lede">The first consultation is free and there&rsquo;s no referral needed. Call or email and I&rsquo;ll get back to you within two working days.</p>
+          <p className="lede">The initial phone consultation is free and there&rsquo;s no referral needed. Call or email and I&rsquo;ll get back to you within three working days.</p>
         </div>
       </section>
 
@@ -80,7 +80,7 @@ export default function Contact() {
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
             </span>
             <h2>Email me directly</h2>
-            <p className="lede">The quickest way to reach me. I read every message myself and reply within two working days.</p>
+            <p className="lede">The quickest way to reach me. I read every message myself and reply within three working days.</p>
             <a className="btn btn--primary" href="mailto:info@tinytalkersni.com">info@tinytalkersni.com</a>
           </div>
         </div>

@@ -6,10 +6,14 @@ const CREDENTIALS = [
   "BSc (Hons) Speech and Language Therapy",
   "HCPC registered & RCSLT member (MRCSLT)",
   "ASLTIP member (MASLTIP)",
+  "PALIN Parent-Child Interaction Therapy for Early Childhood Stammering",
+  "Derbyshire Language Scheme",
   "Makaton trained",
   "Hanen Programme (It Takes Two to Talk / More Than Words)",
   "PECS & TEACCH approaches",
-  "Autism-specific assessment & intervention training",
+  "ADOS (Autism Diagnostic Observation Schedule)",
+  "Gina Davies - The Curiosity Programme",
+  "Gestalt Language Processing Training",
 ];
 
 export default function About() {

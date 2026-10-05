@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div>
             <h2>Tiny Talkers NI</h2>
-            <p>Independent speech and language therapy for children across Northern Ireland. Clinic based in County Fermanagh, with home, nursery and school visits available.</p>
+            <p>Independent speech and language therapy for children across Northern Ireland. Clinic based in County Fermanagh, with nursery and school visits available.</p>
           </div>
           <div>
             <h2>Contact</h2>
@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Tiny Talkers. Registered with the RCSLT and HCPC.</p>
+          <p>&copy; {new Date().getFullYear()} Tiny Talkers. Registered with the RCSLT, HCPC and ASLTIP.</p>
         </div>
       </div>
     </footer>

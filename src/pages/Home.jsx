@@ -102,7 +102,7 @@ export default function Home() {
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" /></svg>
               </span>
               <h3>Therapy sessions</h3>
-              <p>Regular one-to-one or small-group sessions at home, at nursery or school — playful, practical and paced to suit your child.</p>
+              <p>Regular one-to-one or small-group sessions at my clinic, nursery or school — playful, practical and paced to suit your child.</p>
               <span className="card__more">Learn more &rarr;</span>
             </Link>
           </div>
@@ -128,7 +128,7 @@ export default function Home() {
               <span className="step__num" aria-hidden="true"></span>
               <div>
                 <h3>Assessment</h3>
-                <p>A relaxed, play-based session to understand your child&rsquo;s strengths and where they need support.</p>
+                <p>A relaxed, play-based or formal assessment to understand your child&rsquo;s strengths and where they need support.</p>
               </div>
             </li>
             <li className="step">
@@ -157,8 +157,9 @@ export default function Home() {
             <div>
               <p className="eyebrow">About the therapist</p>
               <h2>Hi, I&rsquo;m Shirley-Ann Dickey</h2>
-              <p>I&rsquo;m a paediatric speech and language therapist with NHS experience since 2004 and my own independent practice since 2012. I&rsquo;m registered with the Royal College of Speech and Language Therapists (MRCSLT) and HCPC, and trained in Makaton, the Hanen Programme, PECS and TEACCH.</p>
-              <p>My approach is warm, practical and family-centred. I take time to get to know each child, work closely with parents and carers, and liaise with nurseries, schools and other professionals so everyone is pulling in the same direction.</p>
+              <p>I am an experienced Speech and Language Therapist, with over 20 years experience supporting children with a wide range of speech, language and communication needs.</p>
+              <p>I began my career working in the NHS in 2004, gaining valuable experience across a variety of settings including community clinics, mainstream schools, specialist speech and language units and autism services.</p>
+              <p>In 2012 I established my own independent speech and language therapy practice. My approach is warm, practical and family-centred. I take time to get to know each child, work closely with parents and carers, and liaise with nurseries, schools and other professionals so everyone is pulling in the same direction.</p>
               <Link className="btn btn--secondary" to="/about">More about me</Link>
             </div>
           </div>
