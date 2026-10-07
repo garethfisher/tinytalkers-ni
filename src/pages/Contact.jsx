@@ -4,7 +4,7 @@ import { usePageMeta } from "../hooks/usePageMeta.js";
 export default function Contact() {
   usePageMeta(
     "Get in touch — Tiny Talkers NI",
-    "Contact Tiny Talkers NI for a free initial consultation. Phone 07779 619417, email info@tinytalkersni.com, or use the enquiry form. Clinic in Killadeas, County Fermanagh."
+    "Contact Tiny Talkers NI for a free initial consultation. Phone +44 7779 619417, email info@tinytalkersni.com, or use the enquiry form. Clinic in Killadeas, County Fermanagh."
   );
 
   return (
@@ -25,7 +25,7 @@ export default function Contact() {
               <ul className="contact-list">
                 <li>
                   <span className="label">Phone</span>
-                  <a href="tel:+447779619417">07779 619417</a>
+                  <a href="tel:+447779619417">+44 7779 619417</a>
                 </li>
                 <li>
                   <span className="label">Email</span>

@@ -46,7 +46,7 @@ export default function Home() {
               <Link className="btn btn--primary" to="/contact">Book a free consultation</Link>
               <Link className="btn btn--secondary" to="/services">See how it works</Link>
             </div>
-            <p className="hero__contact">Prefer to talk now? Call <a href="tel:+447779619417">07779 619417</a></p>
+            <p className="hero__contact">Prefer to talk now? Call <a href="tel:+447779619417">+44 7779 619417</a></p>
           </div>
           <div className={"chat" + (chatInView ? " is-visible" : "")} aria-hidden="true" ref={chatRef}>
             <span className="bubble bubble--them">Is my little one a late talker?</span>

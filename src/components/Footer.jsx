@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <h2>Contact</h2>
             <ul className="footer-nav">
-              <li><a href="tel:+447779619417">07779 619417</a></li>
+              <li><a href="tel:+447779619417">+44 7779 619417</a></li>
               <li><a href="mailto:info@tinytalkersni.com">info@tinytalkersni.com</a></li>
               <li>16 Valley Road, Rossclare,<br />Killadeas, Irvinestown,<br />Co. Fermanagh, BT94 1SF</li>
             </ul>
