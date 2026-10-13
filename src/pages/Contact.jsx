@@ -37,7 +37,7 @@ export default function Contact() {
                 </li>
                 <li>
                   <span className="label">Area covered</span>
-                  Fermanagh and the wider Northern Ireland area, including home, nursery and school visits.
+                  Fermanagh and the wider Northern Ireland area, including nursery and school visits.
                 </li>
               </ul>
             </div>

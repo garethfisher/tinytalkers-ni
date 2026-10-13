@@ -16,7 +16,7 @@ const SERVICES = [
   },
   {
     title: "4. One-to-one therapy sessions",
-    body: "Regular 45-minute sessions tailored to your child’s goals, with practical activities and resources to continue at home between visits.",
+    body: "Regular 45-minute sessions tailored to your child’s goals, with practical activities and resources to continue at home between sessions.",
   },
   {
     title: "5. Small-group therapy",

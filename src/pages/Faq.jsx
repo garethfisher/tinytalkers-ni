@@ -24,7 +24,7 @@ const FAQS = [
   },
   {
     q: "How much does it cost?",
-    a: "Fees are available on request and depend on the service. Assessment and session fees include administration time and materials. Travel to your home, nursery or school is calculated separately based on distance. The initial consultation is free. Get in touch for a full price list.",
+    a: "Fees are available on request and depend on the service. Assessment and session fees include administration time and materials. Travel to your nursery or school is calculated separately based on distance. The initial consultation is free. Get in touch for a full price list.",
   },
   {
     q: "Can I claim on private health insurance?",
