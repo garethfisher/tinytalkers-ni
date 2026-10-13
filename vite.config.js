@@ -1,10 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// Served from https://garethfisher.github.io/tinytalkers-ni/ — a GitHub
-// Pages project site lives under a /<repo-name>/ subpath, so every asset
-// and route needs that base baked in.
+// Served from the root of the custom domain https://tinytalkersni.com/
+// (set in the repo's Pages settings), so no subpath is needed.
 export default defineConfig({
-  base: "/tinytalkers-ni/",
+  base: "/",
   plugins: [react()],
 });

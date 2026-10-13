@@ -1,7 +1,7 @@
 # Tiny Talkers NI
 
 React (Vite) rebuild of a children's speech & language therapy site, deployed
-to GitHub Pages at **https://garethfisher.github.io/tinytalkers-ni/**.
+to GitHub Pages at **https://tinytalkersni.com/**.
 
 ## Stack
 
@@ -48,9 +48,13 @@ The app is a client-rendered SPA using `BrowserRouter`, so GitHub Pages —
 which has no server-side routing — needs the classic
 [spa-github-pages](https://github.com/rafgraph/spa-github-pages) redirect
 trick to make direct links / refreshes on non-root routes (e.g.
-`/tinytalkers-ni/about`) work. That's what `public/404.html` and the inline
+`/about`) work. That's what `public/404.html` and the inline
 script at the top of `index.html` are doing; don't remove them.
 
-`vite.config.js` sets `base: "/tinytalkers-ni/"` to match the GitHub Pages
-project-site subpath. If this repo is ever renamed, update `base` here to
-match, or Pages assets/routes will 404.
+The custom domain `tinytalkersni.com` is set in the repo's Pages settings
+(a `CNAME` file is ignored by Actions-based deployments), with DNS at
+HostGator: four `A` records for `@` pointing at GitHub Pages and a `www`
+CNAME to `garethfisher.github.io`. `vite.config.js` sets `base: "/"` to
+match. If the site ever goes back to `garethfisher.github.io/tinytalkers-ni/`,
+set `base` to `"/tinytalkers-ni/"` and `pathSegmentsToKeep` in
+`public/404.html` to `1`, or assets/routes will 404.

@@ -5,11 +5,11 @@
   <title>Tiny Talkers NI</title>
   <script>
     // GitHub Pages has no server-side router, so a direct hit on a deep
-    // route (e.g. /tinytalkers-ni/about) 404s. Encode the intended path
+    // route (e.g. /about) 404s. Encode the intended path
     // into a query string and bounce to the SPA shell, which decodes it
     // back (see the inline script in index.html) before React Router
     // takes over. https://github.com/rafgraph/spa-github-pages
-    var pathSegmentsToKeep = 1; // "/tinytalkers-ni"
+    var pathSegmentsToKeep = 0; // served from the domain root
     var l = window.location;
     l.replace(
       l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") +
