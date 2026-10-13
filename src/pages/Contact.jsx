@@ -43,7 +43,6 @@ export default function Contact() {
             </div>
 
             <div className="directions">
-              <h2>Finding the clinic</h2>
               <figure className="office-photo">
                 <img src={asset("brand_assets/img-office.jpg")} alt="The children's therapy room at Tiny Talkers NI, with a play table, storage and toys" width="1200" height="783" loading="lazy" />
                 <figcaption>Inside the therapy room &mdash; a calm, playful space for sessions.</figcaption>

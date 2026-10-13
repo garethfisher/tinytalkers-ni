@@ -689,7 +689,7 @@ strong { font-weight: 700; }
 .map {
   position: relative;
   width: 100%;
-  margin: var(--space-7) 0 0;
+  margin: var(--space-8) 0 0;
   overflow: hidden;
   background: var(--surface-alt);
   border-top: 1px solid var(--border);
@@ -758,6 +758,7 @@ strong { font-weight: 700; }
 /* ---------- Responsive: tablet ---------- */
 @media (min-width: 48rem) {
   .section { padding-block: var(--space-9); }
+  .map { margin-top: var(--space-9); }
   .card-grid { grid-template-columns: repeat(2, 1fr); }
   .hero__grid { grid-template-columns: 1.1fr 0.9fr; align-items: center; gap: var(--space-8); }
   .profile { grid-template-columns: 0.8fr 1.2fr; align-items: start; }
