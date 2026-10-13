@@ -48,14 +48,6 @@ export default function Contact() {
                 <img src={asset("brand_assets/img-office.jpg")} alt="The children's therapy room at Tiny Talkers NI, with a play table, storage and toys" width="1200" height="783" loading="lazy" />
                 <figcaption>Inside the therapy room &mdash; a calm, playful space for sessions.</figcaption>
               </figure>
-              <div>
-                <h3>From Enniskillen</h3>
-                <p>Take the A32 towards Irvinestown / Kesh. After roughly 6 miles, turn right onto Valley Road at Killadeas. The clinic is on the right at number 16; parking is available on site.</p>
-              </div>
-              <div>
-                <h3>From Kesh</h3>
-                <p>Follow the B82 south towards Enniskillen through Rossclare. Turn left onto Valley Road at Killadeas and continue to number 16 on the right.</p>
-              </div>
             </div>
           </div>
         </div>
